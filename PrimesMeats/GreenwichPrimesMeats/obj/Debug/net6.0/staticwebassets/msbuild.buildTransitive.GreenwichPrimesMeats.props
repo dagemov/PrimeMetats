@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\GreenwichPrimesMeats.props" />
+</Project>
