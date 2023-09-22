@@ -20,3 +20,26 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+#Home{
+    margin: 2rem 0;
+    border-radius : 10%;
+    width: 200px;
+}
+.sebas{
+    line-height:1.5;
+    font-size:1.25rem;
+    border-radius: 10%;
+    margin :20px;
+}
+.title {
+    background-color: #343a40;
+    margin:30px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0px gray;
+}
+.box {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 5px 0 gray;
+    margin :20px;
+}

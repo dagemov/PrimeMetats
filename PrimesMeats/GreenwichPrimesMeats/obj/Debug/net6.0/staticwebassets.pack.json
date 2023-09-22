@@ -13,6 +13,30 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\sebastian\\source\\repos\\PrimeMetats\\PrimesMeats\\GreenwichPrimesMeats\\wwwroot\\images\\statics\\403.png",
+      "PackagePath": "staticwebassets\\images\\statics\\403.png"
+    },
+    {
+      "Id": "C:\\Users\\sebastian\\source\\repos\\PrimeMetats\\PrimesMeats\\GreenwichPrimesMeats\\wwwroot\\images\\statics\\404.gif",
+      "PackagePath": "staticwebassets\\images\\statics\\404.gif"
+    },
+    {
+      "Id": "C:\\Users\\sebastian\\source\\repos\\PrimeMetats\\PrimesMeats\\GreenwichPrimesMeats\\wwwroot\\images\\statics\\Home.jpg",
+      "PackagePath": "staticwebassets\\images\\statics\\Home.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sebastian\\source\\repos\\PrimeMetats\\PrimesMeats\\GreenwichPrimesMeats\\wwwroot\\images\\statics\\aspnet.jpg",
+      "PackagePath": "staticwebassets\\images\\statics\\aspnet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sebastian\\source\\repos\\PrimeMetats\\PrimesMeats\\GreenwichPrimesMeats\\wwwroot\\images\\users\\no-image.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\no-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sebastian\\source\\repos\\PrimeMetats\\PrimesMeats\\GreenwichPrimesMeats\\wwwroot\\images\\users\\sebas.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\sebas.jpg"
+    },
+    {
       "Id": "C:\\Users\\sebastian\\source\\repos\\PrimeMetats\\PrimesMeats\\GreenwichPrimesMeats\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

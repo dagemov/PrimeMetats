@@ -16,16 +16,48 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\sebastian\source\repos\PrimeMetats\PrimesMeats\GreenwichPrimesMeats
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/NotAuthorized.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxOb3RBdXRob3JpemVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Home/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcjQwNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Home/Me.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Home/_Presentation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUHJlc2VudGF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Home/_Skills.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfU2tpbGxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Shared/_User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Shared/_ValidationScriptsPartial.cshtml]
