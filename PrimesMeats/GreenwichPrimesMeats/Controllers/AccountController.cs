@@ -5,18 +5,21 @@ using GreenwichPrimesMeats.Models.Users;
 using GreenwichPrimesMeats.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Logging;
 
 namespace GreenwichPrimesMeats.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly ILogger<AccountController> _logger;
         private readonly IUserHelper _userHelper;
 		private readonly DataContext _context;
 		private readonly IBlobHelper _blobHelper;
 
-		public AccountController(IUserHelper userHelper, DataContext context,  IBlobHelper blobHelper)
+		public AccountController(ILogger<AccountController> logger,IUserHelper userHelper, DataContext context,  IBlobHelper blobHelper)
         {
+            _logger = logger;
             _userHelper = userHelper;
 			_context = context;
 			_blobHelper = blobHelper;
@@ -64,7 +67,7 @@ namespace GreenwichPrimesMeats.Controllers
             AddUserViewModel model = new AddUserViewModel
             {
                 Id = Guid.Empty.ToString(),
-                UserType = UserType.User,
+                UserType = UserType.Admin,
             };
 
             return View(model);
@@ -85,9 +88,11 @@ namespace GreenwichPrimesMeats.Controllers
 				}
 
 				model.ImageId= imageId;
+
                 User user = await _userHelper.AddUserAsync(model);
-				
-				if (user == null)
+                
+
+                if (user == null)
 				{
 					ModelState.AddModelError(string.Empty, "This email is alredy Used");
 					return View(model);

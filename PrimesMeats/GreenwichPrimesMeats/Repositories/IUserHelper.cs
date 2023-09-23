@@ -6,6 +6,7 @@ namespace GreenwichPrimesMeats.Repositories
 {
     public interface IUserHelper
     {
+
         Task<User> GetUserAsync(string email);
 
         Task<IdentityResult> AddUserAsync(User user, string password);

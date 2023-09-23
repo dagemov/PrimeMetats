@@ -10,13 +10,15 @@ namespace GreenwichPrimesMeats.Repositories
 {
     public class UserHelper : IUserHelper
     {
+        private readonly ILogger<UserHelper> _logger;
         private readonly DataContext _context;
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly SignInManager<User> _signInManager;
 
-        public UserHelper(DataContext context, UserManager<User> userManager, RoleManager<IdentityRole> roleManager,SignInManager<User> signInManager)
+        public UserHelper(ILogger<UserHelper> logger,DataContext context, UserManager<User> userManager, RoleManager<IdentityRole> roleManager,SignInManager<User> signInManager)
         {
+            _logger = logger;
             _context = context;
             _userManager = userManager;
             _roleManager = roleManager;
@@ -24,6 +26,7 @@ namespace GreenwichPrimesMeats.Repositories
         }
 		public async Task<User> AddUserAsync(AddUserViewModel model)
 		{
+            _logger.LogWarning("Viendo que pasa");
             User user = new ()
             {
                 Email = model.Username,
@@ -36,8 +39,9 @@ namespace GreenwichPrimesMeats.Repositories
                 Street = model.Street,
                 ZipCode = model.ZipCode,
                 DateTimeCreation= DateTime.Now,
-			};
 
+			};
+            _logger.LogWarning("Viendo que pasa");
 
             IdentityResult result = await _userManager.CreateAsync(user, model.Password);
             if (result != IdentityResult.Success)
@@ -46,6 +50,7 @@ namespace GreenwichPrimesMeats.Repositories
             }
 
             User newUser = await GetUserAsync(model.Username);
+         
             await AddUserToRoleAsync(newUser, user.UserType.ToString());
             return newUser;
         }
@@ -60,6 +65,12 @@ namespace GreenwichPrimesMeats.Repositories
 
         public async  Task AddUserToRoleAsync(User user, string roleName)
         {
+            bool flag =  await _roleManager.RoleExistsAsync(roleName);
+           
+            if (!flag)
+            {
+               await  _roleManager.CreateAsync(new IdentityRole() { Name=roleName});
+            }
             await _userManager.AddToRoleAsync(user, roleName);
         }
 
