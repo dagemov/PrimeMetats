@@ -18,7 +18,7 @@ namespace GreenwichPrimesMeats.Data.Entities
         [Display(Name = "Picture")]
         public string ImageFullPath => ImageId == Guid.Empty
             ? $"https://localhost:7263/images/users/no-image.jpg"
-            : $"https://shoping1.blob.core.windows.net/users/{ImageId}";
+            : $"https://pathv1.blob.core.windows.net/users/{ImageId}";
         [Display(Name = "User type")]
         public UserType UserType { get; set; }
         [Display(Name = "User")]

@@ -25,8 +25,49 @@ namespace GreenwichPrimesMeats.Controllers
 			_blobHelper = blobHelper;
 
 		}
+        public async Task<IActionResult> AdminsIndex()
+        {
+            var users = await _context.Users.ToListAsync();
+            ICollection<User> result = new List<User>();
+            foreach (var i in users)
+            {
+                if (i.UserType.ToString().Equals("Admin"))
+                {
+                    result.Add(i);
+                }
+            }
 
-		public IActionResult Login()
+            return View(result);
+        }
+        public async Task<IActionResult> EmployedIndex()
+        {
+            var users = await _context.Users.ToListAsync();
+            ICollection<User> result = new List<User>();
+            foreach (var i in users)
+            {
+                if (i.UserType.ToString().Equals("Employed"))
+                {
+                    result.Add(i);
+                }
+            }
+
+            return View(result);
+        }
+        public async Task<IActionResult> UsersIndex()
+        {
+            var users = await _context.Users.ToListAsync();
+            ICollection<User> result = new List<User>();
+            foreach (var i in users)
+            {
+                if (i.UserType.ToString().Equals("User"))
+                {
+                    result.Add(i);
+                }
+            }
+
+            return View(result);
+        }
+        public IActionResult Login()
         {
             if (User.Identity.IsAuthenticated)
             {
@@ -62,12 +103,32 @@ namespace GreenwichPrimesMeats.Controllers
         {
             return View();
         }
-        public async Task<IActionResult> Register()
+        public async Task<IActionResult> RegisterAdmin()
         {
             AddUserViewModel model = new AddUserViewModel
             {
                 Id = Guid.Empty.ToString(),
                 UserType = UserType.Admin,
+            };
+
+            return View(model);
+        }
+        public async Task<IActionResult> RegisterEmployed()
+        {
+            AddUserViewModel model = new AddUserViewModel
+            {
+                Id = Guid.Empty.ToString(),
+                UserType = UserType.Employed,
+            };
+
+            return View(model);
+        }
+        public async Task<IActionResult> Register()
+        {
+            AddUserViewModel model = new AddUserViewModel
+            {
+                Id = Guid.Empty.ToString(),
+                UserType = UserType.User,
             };
 
             return View(model);
@@ -114,7 +175,35 @@ namespace GreenwichPrimesMeats.Controllers
 			}
 
 			return View(model);
-		}        
+		}
+        [HttpGet]
+        public async Task<IActionResult> RegisterSchedule(string id)
+        {
+            if (id ==null)
+            {
+                return NotFound();
+            }
+            var user = await _userHelper.GetUserAsync(id);
+            if (user ==null)
+            {
+                return NotFound();
+            }
+            return View(user);
+            
+        }
+        [HttpPost]
+        public async Task<IActionResult> RegisterSchedule(string id,EditUserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                if (id == null || model == null)
+                {
+                    return NotFound();
+                }
+               // var schedule = 
+            }
+            return View();
+        }
 
     }
 }
