@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pbnNJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/EmployedIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFbXBsb3llZEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +38,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/RegisterAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/RegisterEmployed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckVtcGxveWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/RegisterService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlclNlcnZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/_Data.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/_Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Account/_Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sebastian/source/repos/PrimeMetats/PrimesMeats/GreenwichPrimesMeats/Views/Home/Error404.cshtml]

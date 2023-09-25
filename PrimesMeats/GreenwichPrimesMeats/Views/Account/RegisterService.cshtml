@@ -1,0 +1,19 @@
+﻿@model GreenwichPrimesMeats.Models.Users.ServiceUserViewModel;
+
+@{
+    ViewData["Title"] = "Register Service";
+}
+<div class="row">
+    <div>
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="UserId" />
+
+        <form asp-action="RegisterService">
+            <partial name="_Data" />
+
+            <div class="form-group mt-2">
+                <input type="submit" value="RegisterService" class="btn btn-outline-primary" <i class="bi bi-floppy-fill"></i> 
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,24 +1,23 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.Contracts;
 
-namespace GreenwichPrimesMeats.Data.Entities
+namespace GreenwichPrimesMeats.Models.Users
 {
-    public class Service
+    public class ServiceUserViewModel
     {
         public int Id { get; set; }
-        [Display(Name = "Name Service")]
+        [Required]
         public string Name { get; set; }
+        [Required]
+        [Display(Name = "Description")]
         public string Description { get; set; }
+        [Required]
         [Display(Name = "Type Service")]
         public string Type { get; set; }
-        [Display(Name = "Type Description")]
+
+        [Display(Name = "Description Type")]
         public string TypeDescription { get; set; }
         [Display(Name = "Extimate Price")]
         public double PriceService { get; set; }
-
-        public ICollection<ServiceUser> ServiceUsers { get; set; }
-        public Lis Lis { get; set; }
-        public Schedule Schedule { get; set; }
-        public DateTime DateTimeCreation { get; set; }
+        public  string UserId { get; set; }
     }
 }

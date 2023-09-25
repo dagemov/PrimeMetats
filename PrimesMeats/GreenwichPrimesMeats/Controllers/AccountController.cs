@@ -14,17 +14,17 @@ namespace GreenwichPrimesMeats.Controllers
     {
         private readonly ILogger<AccountController> _logger;
         private readonly IUserHelper _userHelper;
-		private readonly DataContext _context;
-		private readonly IBlobHelper _blobHelper;
+        private readonly DataContext _context;
+        private readonly IBlobHelper _blobHelper;
 
-		public AccountController(ILogger<AccountController> logger,IUserHelper userHelper, DataContext context,  IBlobHelper blobHelper)
+        public AccountController(ILogger<AccountController> logger, IUserHelper userHelper, DataContext context, IBlobHelper blobHelper)
         {
             _logger = logger;
             _userHelper = userHelper;
-			_context = context;
-			_blobHelper = blobHelper;
+            _context = context;
+            _blobHelper = blobHelper;
 
-		}
+        }
         public async Task<IActionResult> AdminsIndex()
         {
             var users = await _context.Users.ToListAsync();
@@ -136,71 +136,104 @@ namespace GreenwichPrimesMeats.Controllers
 
 
         [HttpPost]
-		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Register(AddUserViewModel model)
-		{
-			if (ModelState.IsValid)
-			{
-				Guid imageId = Guid.Empty;
-
-				if (model.ImageFile != null)
-				{
-					imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "users");
-				}
-
-				model.ImageId= imageId;
-
-                User user = await _userHelper.AddUserAsync(model);
-                
-
-                if (user == null)
-				{
-					ModelState.AddModelError(string.Empty, "This email is alredy Used");
-					return View(model);
-				}
-
-				LoginViewModel loginViewModel = new LoginViewModel
-				{
-					Password = model.Password,
-					RememberMe = false,
-					Username = model.Username
-				};
-
-				var result2 = await _userHelper.LoginAsync(loginViewModel);
-
-				if (result2.Succeeded)
-				{
-					return RedirectToAction("Index", "Home");
-				}
-			}
-
-			return View(model);
-		}
-        [HttpGet]
-        public async Task<IActionResult> RegisterSchedule(string id)
-        {
-            if (id ==null)
-            {
-                return NotFound();
-            }
-            var user = await _userHelper.GetUserAsync(id);
-            if (user ==null)
-            {
-                return NotFound();
-            }
-            return View(user);
-            
-        }
-        [HttpPost]
-        public async Task<IActionResult> RegisterSchedule(string id,EditUserViewModel model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(AddUserViewModel model)
         {
             if (ModelState.IsValid)
             {
-                if (id == null || model == null)
+                Guid imageId = Guid.Empty;
+
+                if (model.ImageFile != null)
                 {
-                    return NotFound();
+                    imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "users");
                 }
-               // var schedule = 
+
+                model.ImageId = imageId;
+
+                User user = await _userHelper.AddUserAsync(model);
+
+
+                if (user == null)
+                {
+                    ModelState.AddModelError(string.Empty, "This email is alredy Used");
+                    return View(model);
+                }
+
+                LoginViewModel loginViewModel = new LoginViewModel
+                {
+                    Password = model.Password,
+                    RememberMe = false,
+                    Username = model.Username
+                };
+
+                var result2 = await _userHelper.LoginAsync(loginViewModel);
+
+                if (result2.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
+            return View(model);
+        }
+        [HttpGet]
+        public async Task<IActionResult> RegisterService(string id)
+        {
+            /*if (email == null)
+            {
+                return NotFound();
+            }*/
+           // var email = await _context.Users.FindAsync(id);
+            var user = await _userHelper.GetUserIdAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            ServiceUserViewModel model = new()
+            {
+                UserId = user.Id,
+            };
+            return View(model);
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> RegisterService(ServiceUserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+
+                Service service = new()
+                {
+                    Name = model.Name,
+                    Description = model.Description,
+                    Type = model.Type,
+                    TypeDescription = model.TypeDescription,
+                    PriceService = model.PriceService,
+                };
+                _context.Services.Add(service);
+                try
+                {                  
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "The employed have this service");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
+                    }
+                }
+                catch (Exception exception)
+                {
+                    ModelState.AddModelError(string.Empty, exception.Message);
+                }
+
+                return View(model);
+
             }
             return View();
         }

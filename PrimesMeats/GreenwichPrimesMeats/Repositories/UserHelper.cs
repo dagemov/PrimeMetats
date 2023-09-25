@@ -94,6 +94,12 @@ namespace GreenwichPrimesMeats.Repositories
 
         }
 
+        public async Task<User> GetUserIdAsync(string id)
+        {
+            return await _context.Users
+           .FirstOrDefaultAsync(u => u.Id == id);
+
+        }
         public  async Task<bool> IsUserInRoleAsync(User user, string roleName)
         {
             return await _userManager.IsInRoleAsync(user, roleName);

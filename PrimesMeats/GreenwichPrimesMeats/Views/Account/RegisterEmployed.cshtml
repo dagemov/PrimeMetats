@@ -1,0 +1,23 @@
+﻿@model GreenwichPrimesMeats.Models.Users.AddUserViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Add <i class="bi bi-person-fill-add"></i></h2>
+
+<h4>User Employed<i class="bi bi-file-person-fill"></i></h4>
+<hr />
+<div class="row">
+   <partial name="_Register" />
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="text/javascript">
+
+    </script>
+}

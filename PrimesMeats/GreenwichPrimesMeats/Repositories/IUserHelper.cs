@@ -9,6 +9,7 @@ namespace GreenwichPrimesMeats.Repositories
 
         Task<User> GetUserAsync(string email);
 
+        Task<User> GetUserIdAsync(string id);
         Task<IdentityResult> AddUserAsync(User user, string password);
 		Task<User> AddUserAsync(AddUserViewModel model);
 
