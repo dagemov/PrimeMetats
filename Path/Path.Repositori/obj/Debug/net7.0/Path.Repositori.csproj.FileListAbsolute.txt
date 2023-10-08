@@ -1,0 +1,15 @@
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\bin\Debug\net7.0\Path.Repositori.deps.json
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\bin\Debug\net7.0\Path.Repositori.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\bin\Debug\net7.0\Path.Repositori.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\Path.Repositori.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\Path.Repositori.AssemblyInfoInputs.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\Path.Repositori.AssemblyInfo.cs
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\Path.Repositori.csproj.CoreCompileInputs.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\Path.Repositori.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\refint\Path.Repositori.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\Path.Repositori.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\ref\Path.Repositori.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\bin\Debug\net7.0\Path.Model.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\bin\Debug\net7.0\Path.Model.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\Path.Repositori.csproj.AssemblyReference.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Repositori\obj\Debug\net7.0\Path.Repositori.csproj.CopyComplete

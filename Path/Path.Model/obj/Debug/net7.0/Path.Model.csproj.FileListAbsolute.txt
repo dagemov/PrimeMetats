@@ -1,0 +1,14 @@
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\bin\Debug\net7.0\Path.Model.deps.json
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\bin\Debug\net7.0\Path.Model.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\bin\Debug\net7.0\Path.Model.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\Path.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\Path.Model.AssemblyInfoInputs.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\Path.Model.AssemblyInfo.cs
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\Path.Model.csproj.CoreCompileInputs.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\Path.Model.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\refint\Path.Model.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\Path.Model.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\ref\Path.Model.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\bin\Debug\net7.0\Path.Model.runtimeconfig.json
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\Path.Model.csproj.AssemblyReference.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Model\obj\Debug\net7.0\Path.Model.genruntimeconfig.cache

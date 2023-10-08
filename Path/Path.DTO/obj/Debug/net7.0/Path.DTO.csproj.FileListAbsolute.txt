@@ -1,0 +1,11 @@
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\bin\Debug\net7.0\Path.DTO.deps.json
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\bin\Debug\net7.0\Path.DTO.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\bin\Debug\net7.0\Path.DTO.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\obj\Debug\net7.0\Path.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\obj\Debug\net7.0\Path.DTO.AssemblyInfoInputs.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\obj\Debug\net7.0\Path.DTO.AssemblyInfo.cs
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\obj\Debug\net7.0\Path.DTO.csproj.CoreCompileInputs.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\obj\Debug\net7.0\Path.DTO.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\obj\Debug\net7.0\refint\Path.DTO.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\obj\Debug\net7.0\Path.DTO.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.DTO\obj\Debug\net7.0\ref\Path.DTO.dll

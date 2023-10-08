@@ -1,0 +1,17 @@
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\bin\Debug\net7.0\Path.Utilities.deps.json
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\bin\Debug\net7.0\Path.Utilities.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\bin\Debug\net7.0\Path.Utilities.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\Path.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\Path.Utilities.AssemblyInfoInputs.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\Path.Utilities.AssemblyInfo.cs
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\Path.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\Path.Utilities.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\refint\Path.Utilities.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\Path.Utilities.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\ref\Path.Utilities.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\bin\Debug\net7.0\Path.DTO.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\bin\Debug\net7.0\Path.Model.dll
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\bin\Debug\net7.0\Path.DTO.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\bin\Debug\net7.0\Path.Model.pdb
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\Path.Utilities.csproj.AssemblyReference.cache
+C:\Users\sebastian\source\repos\PrimeMetats\Path\Path.Utilities\obj\Debug\net7.0\Path.Utilities.csproj.CopyComplete

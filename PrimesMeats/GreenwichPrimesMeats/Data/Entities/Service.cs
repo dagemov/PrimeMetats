@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using GreenwichPrimesMeats.Enums;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.Contracts;
 
 namespace GreenwichPrimesMeats.Data.Entities
@@ -6,14 +7,16 @@ namespace GreenwichPrimesMeats.Data.Entities
     public class Service
     {
         public int Id { get; set; }
+
         [Display(Name = "Name Service")]
         public string Name { get; set; }
         public string Description { get; set; }
-        [Display(Name = "Type Service")]
-        public string Type { get; set; }
-        [Display(Name = "Type Description")]
-        public string TypeDescription { get; set; }
-        [Display(Name = "Extimate Price")]
+
+
+        [Display(Name = "Status")]
+        public ServiceStatus Type { get; set; }
+
+        [Display(Name = "Price Extimate")]       
         public double PriceService { get; set; }
 
         public ICollection<ServiceUser> ServiceUsers { get; set; }
